@@ -92,14 +92,40 @@
     /* 👉 Task 5 - [HINT] research align-self */
     #flexContainer5 {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #flexContainer5 .flexItem:nth-child(2) {
+      align-self: center;
     }
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
     #flexContainer6{
       display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(1){
+      justify-content: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(2){
+      align-items: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(3){
+      align-self: flex-start;
     }
     /* 👉 Task 7 - [HINT] research flex-grow */
     #flexContainer7{
       display: flex;
+    }
+    #flexContainer7 .flexItem:nth-child(1){
+      flex-grow: 0;
+    }
+    #flexContainer7 .flexItem:nth-child(2){
+      flex-grow: 1;
+    }
+    #flexContainer7 .flexItem:nth-child(3){
+      flex-grow: 2;
     }
     /* 👉 Task 8 - [HINT] you got this! */
     #flexContainer8{
